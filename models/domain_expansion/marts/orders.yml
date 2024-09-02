@@ -1,0 +1,28 @@
+models:
+  - name: orders
+    description: "Table of order level information"
+    columns:
+
+    # Columns from stg_ecommerce__orders
+    # We don't test these columns, other than the primary key,
+    # as we've already tested them in the staging model. But feel free
+    # to add your own tests here!
+      - name: order_id
+
+      - name: order_created_at
+        description: "When the order was created"
+
+      - name: order_returned_at
+        description: "When the order was returned"
+
+      - name: order_delivered_at
+        description: "When the order was delivered"
+
+      - name: order_shipped_at
+        description: "When the order was shipped"
+
+      - name: order_status
+
+
+      - name: num_items_ordered
+        description: "Number of items in the order"
