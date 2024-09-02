@@ -41,3 +41,8 @@ models:
       +persist_docs: #writes all of our column desciptions into BigQuery!
         relation: true
         columns: true
+        # Table deletes 7 days after expiration (168 hours)
+      +hours_to_expiration: 168
+tests:
+  domain_expansion:
+    +severity: warn

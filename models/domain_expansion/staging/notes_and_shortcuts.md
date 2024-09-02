@@ -14,3 +14,11 @@ The results will appear in system logs, and you can copy/past results to needed 
     +persist_docs: #writes all of our column desciptions into BigQuery!
             relation: true
             columns: true
+
+3) Test severity can be set project-wide on dbt_project.yml
+
+tests:
+  domain_expansion:
+    +severity: warn
+    marts:
+      +severity: error
