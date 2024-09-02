@@ -22,3 +22,20 @@ tests:
     +severity: warn
     marts:
       +severity: error
+
+4) In Jinja, the following brackets represent different things:
+    {% %} Function, in SQL
+    {{ }} Variable, to be Replaced in SQL
+    {# #} Mutliple Line Comment
+
+5) where statments can be run on Tests
+
+6) Few interesting commands on runs/builds/etc.
+    dbt run -s @model will run every model upstream and downstream of chosen model
+        the same can be done with -s +model+
+    Paths can be used to hit all models in a folder
+        -s path:models/domain_expansion/marts
+
+7) Tags can be put on yml or model level
+
+8) indirect tests can be used to run only tests included as part of the model
