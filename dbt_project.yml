@@ -38,3 +38,6 @@ models:
     # Applies to all files under models/example/
     domain_expansion:
       +materialized: table
+      +persist_docs: #writes all of our column desciptions into BigQuery!
+        relation: true
+        columns: true
