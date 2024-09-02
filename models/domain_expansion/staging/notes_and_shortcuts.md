@@ -22,3 +22,10 @@ tests:
     +severity: warn
     marts:
       +severity: error
+
+4) In Jinja, the following brackets represent different things:
+    {% %} Function, in SQL
+    {{ }} Variable, to be Replaced in SQL
+    {# #} Mutliple Line Comment
+
+5) where statments can be run on Tests
